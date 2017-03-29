@@ -55,3 +55,8 @@ body:after {
 body:after {
   content: '#{$breakpoint-list}';
 }
+
+.container{
+	max-width: $row-width;
+	margin: 0 auto;
+}
