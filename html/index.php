@@ -1,57 +1,7 @@
 <?php get_header(); ?>
          <!-- Start the Loop. -->
 			 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
-				 if(get_field('soort') == "simple"){
 			?>
-			<section class="page-header">
-				<div class="container">
-					<h1 class="page-header--title">
-						<?php 
-						if(get_field('title') == 'no'){ 
-							echo get_field('title-text');
-						}else{
-							the_title();
-						}
-						?></h1>
-				</div>
-			</section>
-			<?php
-		}elseif(get_field('soort') == "image"){
-			?>
-			<section class="page-header__image" style="background-image: url('<?php echo get_field('afbeelding')['url'] ?>')">
-				<div class="container">
-					<h1 class="page-header--title">
-						<?php 
-						if(get_field('title') == 'no'){ 
-							echo get_field('title-text');
-						}else{
-							the_title();
-						}
-						?></h1>
-				</div>
-			</section>
-			<?php
-		}elseif(get_field('soort') == "slider"){
-			?> <?php
-			echo get_field('slider');	
-			?> <?php
-		}else{
-			?>
-			<section class="page-header">
-				<div class="container">
-					<h1 class="page-header--title">
-						<?php 
-						if(get_field('title') == 'no' or get_field('title') != false){ 
-							echo get_field('title-text');
-						}else{
-							the_title();
-						}
-						?></h1>
-				</div>
-			</section>
-			<?php
-		}
-	?>
 		<?php if ( function_exists('yoast_breadcrumb') ) {
 			yoast_breadcrumb('<div class="container"><p id="breadcrumbs">U bent hier: ','</p></div>');
 		} ?>			 	<!-- Test if the current post is in category 3. -->

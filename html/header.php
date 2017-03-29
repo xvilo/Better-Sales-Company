@@ -18,14 +18,8 @@
     </head>
     <body <?php body_class(''); ?>>
 	    <div class="wrapper">
-			<header class="main-header">
-				<div class="container">
-				    <div class="header-logo">
-					    <a href="<?php echo site_url(); ?>"><i class="m-icon icon--ui__stamco_logo_big"><svg><use xlink:href="<?php echo get_template_directory_uri() ?>/media/images/sprites/ui.svg#stamco_logo_big" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></i></a>
-				    </div>
-				    <a href="#" class="menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></a>
-				    <nav class="header-menu">
-					    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-				    </nav>
+			<header class="site-header">
+				<div class="menu">
+					
 				</div>
 			</header>
