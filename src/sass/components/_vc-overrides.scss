@@ -1,0 +1,30 @@
+.vc_row{
+	background-position: top center !important;
+	background-size: contain!important;
+}
+
+.full-height-image{
+	
+	& .vc_column-inner{
+		height:100vh;
+	}
+}
+
+.full-height-image-content{
+	
+	& .vc_column-inner{
+		margin: 0 auto;
+		max-width: rem(560px);
+	}
+}
+
+.user-card{
+	background: #FFFFFF;
+	box-shadow: 0 10px 27px 0 rgba(36,36,38,0.23);
+	border-radius: 10px;
+	padding: 2rem 0rem;
+	
+	p{
+		font-size: rem(14px);
+	}
+}
