@@ -1,4 +1,5 @@
 .DS_Store
 html/media/stylesheets/app.css
 html/media/javascripts/app.js
+html/dist/*
 node_modules/*
