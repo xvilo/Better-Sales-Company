@@ -1,0 +1,21 @@
+	.icon--theme__insights {
+		@include rem((width: 48px));
+
+		&:before {
+			padding-top: calc((33% / 48%) * 100%);
+		}
+	}
+	.icon--theme__mindset {
+		@include rem((width: 59px));
+
+		&:before {
+			padding-top: calc((56% / 59%) * 100%);
+		}
+	}
+	.icon--theme__team {
+		@include rem((width: 63px));
+
+		&:before {
+			padding-top: calc((56% / 63%) * 100%);
+		}
+	}

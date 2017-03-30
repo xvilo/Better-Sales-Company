@@ -99,7 +99,14 @@ class button extends WPBakeryShortCode {
 	                    'admin_label' => false,
 	                    'weight' => 0,
 	                    'group' => 'Design',
-	                )              
+	                ),
+	                
+	                array(
+			            'type' => 'css_editor',
+			            'heading' => __( 'Css', 'my-text-domain' ),
+			            'param_name' => 'css',
+			            'group' => __( 'Design options', 'my-text-domain' ),
+			        ),      
 	                     
 	            )
 	        )
@@ -121,6 +128,7 @@ class button extends WPBakeryShortCode {
 	                'color' => 'style-1',
 	                'style' => 'open',
 	                'align' => 'normal',
+	                'css' => '',
 	            ), 
 	            $atts
 	        )
@@ -129,7 +137,9 @@ class button extends WPBakeryShortCode {
 	    // Fill $html var with data
 	    $class = "button";
 	    $href = vc_build_link($link);
-	    $html = "<span class='$class {$class}__{$align}'><a href='{$href['url']}' title='{$href['title']}' target='{$href['target']}' rel='{$href['rel']}' class='{$class}--inner {$class}--inner__{$size} {$class}--inner__{$color} {$class}--inner__{$style}'>{$title}</a></span>";      
+	    $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, vc_shortcode_custom_css_class( $css, ' ' ), $this->settings['base'], $atts );
+	    $cssClass = esc_attr( $css_class );
+	    $html = "<span class='$cssClass $class {$class}__{$align}'><a href='{$href['url']}' title='{$href['title']}' target='{$href['target']}' rel='{$href['rel']}' class='{$class}--inner {$class}--inner__{$size} {$class}--inner__{$color} {$class}--inner__{$style}'>{$title}</a></span>";      
 	     
 	    return $html;
 	     
