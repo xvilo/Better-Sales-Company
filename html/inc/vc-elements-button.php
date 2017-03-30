@@ -93,7 +93,7 @@ class button extends WPBakeryShortCode {
 	                array(
 	                    'type' => 'dropdown',
 	                    'heading' => __( 'Align', 'text-domain' ),
-	                    'param_name' => 'style',
+	                    'param_name' => 'align',
 	                    'value' => array( "selecteer Uitlijning", "normal", "center" ),
 	                    'description' => __( 'Uitlijning', 'text-domain' ),
 	                    'admin_label' => false,
@@ -129,7 +129,7 @@ class button extends WPBakeryShortCode {
 	    // Fill $html var with data
 	    $class = "button";
 	    $href = vc_build_link($link);
-	    $html = "<span class='$class {$class}__{$align}'><a href='{$href['url']}' title='{$href['title']}' target='{$href['target']}' rel='{$href['rel']}' class='{$class} {$class}--inner__{$size} {$class}--inner__{$color} {$class}--inner__{$style}'>{$title}</a></span>";      
+	    $html = "<span class='$class {$class}__{$align}'><a href='{$href['url']}' title='{$href['title']}' target='{$href['target']}' rel='{$href['rel']}' class='{$class}--inner {$class}--inner__{$size} {$class}--inner__{$color} {$class}--inner__{$style}'>{$title}</a></span>";      
 	     
 	    return $html;
 	     

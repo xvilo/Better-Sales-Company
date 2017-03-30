@@ -2,3 +2,31 @@
 //------------------------------------------------------------------------------
 
 $base-font-size: 16px; // Used to set intial rem scale in utilities/units
+
+// Colors
+//------------------------------------------------------------------------------
+
+$main: #FF4900;
+$second: #0096AF;
+$third: #1B8BF9;
+$light-text: #fff;
+$dark-text: #575656;
+
+// Sizes
+//------------------------------------------------------------------------------
+
+$w-design:    1536px;
+$w-imac:      1440px;
+$w-macbook:   1280px;
+$w-ipad:      1024px;
+$w-portrait:  768px;
+$w-iphone:    640px;
+
+$nav-breakpoint: 1280px;
+
+$cubic:       cubic-bezier(0.070, 0.505, 0.335, 0.995);
+
+// Transition
+//------------------------------------------------------------------------------
+$cubic:       cubic-bezier(0.070, 0.505, 0.335, 0.995);
+$transition: 1s $cubic;

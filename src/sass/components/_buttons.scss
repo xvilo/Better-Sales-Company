@@ -1,0 +1,113 @@
+.button{
+	height: 1.625rem * 3;
+	
+	&__normal{
+		display: inline-block;
+	}
+	
+	&__center{
+		display: block;
+		text-align: center;
+	}
+	
+	&--inner{
+		border-radius: rem(60px);
+		text-transform: uppercase;
+		transition: $transition;
+		
+		//--------
+		// Sizes |
+		//-------
+		&__small{
+			font-size: .5rem;
+			padding: .5rem .8125rem;
+			&:hover{
+				font-size: .7rem;
+				padding: .7rem 1.0125rem;
+			}
+		}
+		
+		&__normal{
+			font-size: 1rem;
+			padding: 1rem 1.625rem;
+			&:hover{
+				font-size: 1.2rem;
+				padding: 1.2rem 1.825rem;
+			}
+		}
+		
+		&__big{
+			font-size: 1.5rem;
+			padding: 1.5rem 2.4375rem;
+			&:hover{
+				font-size: 1.7rem;
+				padding: 1.7rem 2.6375rem;
+			}
+		}
+
+		//---------
+		// Styles |
+		//--------
+		&__open{
+			&.button--inner__style-1{
+				background: none!important;
+				border:2px solid $main;
+			}
+			&.button--inner__style-2{
+				background: none!important;
+				border:2px solid $second;
+			}
+			&.button--inner__style-3{
+				background: none!important;
+				border:2px solid $third;
+			}
+		}
+		&__solid{
+			&.button--inner__style-1{
+				background: $main;
+				color:$light-text!important;
+				box-shadow: rem(4px) rem(6px) rem(16px) rem(0) rgba($main,0.33);
+				&:hover{
+					box-shadow: rem(4px) rem(11px) rem(16px) rem(0) rgba($main,0.55);
+				}
+			}
+			&.button--inner__style-2{
+				background: $second;
+				color:$light-text!important;
+				box-shadow: rem(4px) rem(6px) rem(16px) rem(0) rgba($second,0.33);
+				&:hover{
+					box-shadow: rem(4px) rem(11px) rem(16px) rem(0) rgba($main,0.55);
+				}
+			}
+			&.button--inner__style-3{
+				background: $third;
+				color:$light-text!important;
+				box-shadow: rem(4px) rem(6px) rem(16px) rem(0) rgba($third,0.33);
+				&:hover{
+					box-shadow: rem(10px) rem(11px) rem(16px) rem(0) rgba($third,0.55);
+				}
+			}
+		}
+		
+		//---------
+		// Colors |
+		//--------
+		&__style-1{
+			color: $main;
+			background: $main;
+			border:2px solid $main;
+		}
+		
+		&__style-2{
+			color: $second;
+			background: $second;
+			border:2px solid $second;
+		}
+		
+		&__style-3{
+			color: $third;	
+			background: $third;
+			border:2px solid $third;
+		}
+	}
+}
