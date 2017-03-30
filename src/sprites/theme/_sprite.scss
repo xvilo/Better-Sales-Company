@@ -19,3 +19,10 @@
 			padding-top: calc((56% / 63%) * 100%);
 		}
 	}
+	.icon--theme__world {
+		@include rem((width: 755px));
+
+		&:before {
+			padding-top: calc((353% / 755%) * 100%);
+		}
+	}

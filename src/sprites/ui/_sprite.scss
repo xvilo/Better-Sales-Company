@@ -1,0 +1,7 @@
+	.icon--ui__marks {
+		@include rem((width: 28px));
+
+		&:before {
+			padding-top: calc((20% / 28%) * 100%);
+		}
+	}

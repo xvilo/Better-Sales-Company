@@ -16,8 +16,29 @@ p{
 	margin-bottom: 0.75rem;
 }
 
+a{
+	color:$main;
+	font-size: 0.8rem;
+	border-bottom: 1px solid #747474;
+}
+
 h5{
 	font-size: 1rem;
 	margin-bottom: 0.75rem;
 	text-transform: uppercase;
+}
+
+h1{
+	font-size: 2.5rem;
+}
+
+blockquote{
+	padding-left: 3rem;
+	margin-bottom: 1rem;
+	
+	:before{
+		content: url('../images/quote.svg');
+		position: absolute;
+		margin-left: rem(-40px);
+	}
 }

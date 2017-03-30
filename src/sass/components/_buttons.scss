@@ -14,35 +14,25 @@
 		border-radius: rem(60px);
 		text-transform: uppercase;
 		transition: $transition;
-		
+		min-width: rem(180px);
+		display: inline-block;
+	
 		//--------
 		// Sizes |
 		//-------
 		&__small{
-			font-size: .5rem;
-			padding: .5rem .8125rem;
-			&:hover{
-				font-size: .7rem;
-				padding: .7rem 1.0125rem;
-			}
+			font-size: .8rem;
+			padding: 1rem 1.625rem;
 		}
 		
 		&__normal{
 			font-size: 1rem;
 			padding: 1rem 1.625rem;
-			&:hover{
-				font-size: 1.2rem;
-				padding: 1.2rem 1.825rem;
-			}
 		}
 		
 		&__big{
 			font-size: 1.5rem;
 			padding: 1.5rem 2.4375rem;
-			&:hover{
-				font-size: 1.7rem;
-				padding: 1.7rem 2.6375rem;
-			}
 		}
 
 		//---------
@@ -52,14 +42,23 @@
 			&.button--inner__style-1{
 				background: none!important;
 				border:2px solid $main;
+				&:hover{
+					box-shadow: rem(4px) rem(11px) rem(16px) rem(0) rgba($main,0.55);
+				}
 			}
 			&.button--inner__style-2{
 				background: none!important;
 				border:2px solid $second;
+				&:hover{
+					box-shadow: rem(4px) rem(11px) rem(16px) rem(0) rgba($second,0.55);
+				}
 			}
 			&.button--inner__style-3{
 				background: none!important;
 				border:2px solid $third;
+				&:hover{
+					box-shadow: rem(4px) rem(11px) rem(16px) rem(0) rgba($third,0.55);
+				}
 			}
 		}
 		&__solid{
@@ -76,7 +75,7 @@
 				color:$light-text!important;
 				box-shadow: rem(4px) rem(6px) rem(16px) rem(0) rgba($second,0.33);
 				&:hover{
-					box-shadow: rem(4px) rem(11px) rem(16px) rem(0) rgba($main,0.55);
+					box-shadow: rem(4px) rem(11px) rem(16px) rem(0) rgba($second,0.55);
 				}
 			}
 			&.button--inner__style-3{
