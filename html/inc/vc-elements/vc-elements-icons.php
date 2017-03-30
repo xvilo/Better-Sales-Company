@@ -43,6 +43,17 @@ class icons extends WPBakeryShortCode {
 	                ),
 	                
 	                array(
+	                    'type' => 'dropdown',
+	                    'heading' => __( 'Uitlijning', 'text-domain' ),
+	                    'param_name' => 'align',
+	                    'value' => array( "links", "centered",),
+	                    'description' => __( 'Kies je uitlijning.', 'text-domain' ),
+	                    'admin_label' => false,
+	                    'weight' => 0,
+	                    'group' => 'Algemeen',
+	                ),
+	                
+	                array(
 	                    'type' => 'textfield',
 	                    'holder' => 'h3',
 	                    'class' => 'title-class',
@@ -93,6 +104,7 @@ class icons extends WPBakeryShortCode {
 	                'sn'  => '',
 	                'scope' => 'theme',
 	                'css' => '',
+	                'align' => 'left',
 	            ), 
 	            $atts
 	        )
@@ -105,7 +117,7 @@ class icons extends WPBakeryShortCode {
 	    $dir = get_template_directory_uri();
 	    $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, vc_shortcode_custom_css_class( $css, ' ' ), $this->settings['base'], $atts );
 	    $cssClass = esc_attr( $css_class ); 
-	    $html = "<i class='$cssClass m-{$class} {$class}--{$scope}__{$n}'><svg><use xlink:href='{$dir}/media/images/sprites/{$scope}.svg#{$n}' xmlns:xlink='http://www.w3.org/1999/xlink'></use></svg></i>";      
+	    $html = "<i class='$cssClass m-{$class} {$class}--{$scope}__{$n} m-{$class}__{$align}'><svg><use xlink:href='{$dir}/media/images/sprites/{$scope}.svg#{$n}' xmlns:xlink='http://www.w3.org/1999/xlink'></use></svg></i>";      
 	     
 	    return $html;
 	     
