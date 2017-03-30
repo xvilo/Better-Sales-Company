@@ -17,7 +17,7 @@
 	 ***************************/
 	function sample_admin_notice__success() {
 	    global $current_user;
-	    get_currentuserinfo();
+	    wp_get_current_user();
 	    $admin_usr = "magneet_admin";
 	    $curr_user = $current_user->user_nicename;
 	    if($curr_user == $admin_usr){
