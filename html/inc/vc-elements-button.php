@@ -1,6 +1,6 @@
 <?php
 /*
-Element Description: VC Info Box
+Element Description: VC Button
 */
  
 // Button Class 
@@ -38,7 +38,7 @@ class button extends WPBakeryShortCode {
 	                    'heading' => __( 'Title', 'text-domain' ),
 	                    'param_name' => 'title',
 	                    'value' => __( 'Default value', 'text-domain' ),
-	                    'description' => __( 'Box Title', 'text-domain' ),
+	                    'description' => __( 'Title', 'text-domain' ),
 	                    'admin_label' => false,
 	                    'weight' => 0,
 	                    'group' => 'Algemeen',
