@@ -3,5 +3,6 @@ html/media/stylesheets/app.css
 html/media/javascripts/app.js
 html/dist/*
 node_modules/*
-src/sprites/*/_sprite.scss
-src/sprites/*/sprite.html
+src/sprites/*
+!src/sprites/theme/svg/
+!src/sprites/uit/svg/
