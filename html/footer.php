@@ -1,5 +1,21 @@
 		<footer class="page-footer">
 			<div class="container">
+				<div class="row">
+				  <div class="small-1 large-3 columns">
+					  <p>[logo]</p>
+					  <p>If you want to unlock the growth<br>
+potential of your self, your team<br>
+and your customers?<br>
+<b>Just give me a call</b></p>
+				  </div>
+				  <div class="small-1 large-9 columns">
+					  <?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
+				  </div>
+				</div>
+			</div>
+			<hr>
+			<div class="container">
+				<small>&copy; The Better Sales Company, <?php echo date('Y') ?></small>
 			</div>
 		</footer>
 		</div>

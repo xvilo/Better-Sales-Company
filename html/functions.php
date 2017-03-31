@@ -73,3 +73,17 @@
 	}
 	add_filter( 'style_loader_src', 'remove_cssjs_ver', 10, 2 );
 	add_filter( 'script_loader_src', 'remove_cssjs_ver', 10, 2 );
+	
+	/***************************
+	 * Registering Menu's. *
+	 ***************************/
+	 
+	function register_my_menus() {
+		register_nav_menus(
+	    	array(
+				'header-menu' => __( 'Header Menu' ),
+				'footer-menu' => __( 'Footer Menu' )
+			)
+		);
+	}
+	add_action( 'init', 'register_my_menus' );
