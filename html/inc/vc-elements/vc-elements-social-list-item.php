@@ -78,7 +78,7 @@ class socialListItem extends WPBakeryShortCode {
 	    $href = vc_build_link($link);
 	    $html = "
 	    <li class='social-list--item'>
-	    	<a href='{$href['url']}' title='{$href['title']}' target='{$href['target']}' rel='{$href['rel']}' class='social-list--item__inner class='social-list--item__{$title}'>
+	    	<a href='{$href['url']}' title='{$href['title']}' target='{$href['target']}' rel='{$href['rel']}' class='social-list--item__inner social-list--item__{$title}'>
 	    		<i class='fa fa-{$title}' aria-hidden='true'></i>
 			</a>
 	    </li>";      
