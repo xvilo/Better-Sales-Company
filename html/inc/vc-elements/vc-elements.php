@@ -1,5 +1,5 @@
 <?php
- 	$elements = array('button', 'icons');
+ 	$elements = array('button', 'icons', 'social-list-end', 'social-list-start', 'social-list-item');
  	
  	//getting all files
  	foreach($elements as $element){
