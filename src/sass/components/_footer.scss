@@ -1,0 +1,38 @@
+footer{
+	background: #242526;
+	padding: 2.375rem 0rem 0.8rem 0rem;
+	
+	hr{
+		margin-top: 2.375rem;
+		border: 1px solid rgba(#BCC6D0, 0.4);
+	}
+	
+	p{
+		color: $light-text;
+	}
+	
+	& .menu{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		& .menu-item{
+			margin-right: 2rem;
+			
+			& a{
+				color:$light-text;
+				font-size: .9125rem;	
+				border: none;
+				font-weight: bold;
+				
+				&:hover{
+					border-bottom: 1px solid $light-text;
+				}
+			}
+			
+			&:last-child{
+				margin-right: 0rem;
+			}
+		}
+	}
+}
