@@ -32,6 +32,18 @@ h1{
 	font-size: 2.5rem;
 }
 
+h3{
+	margin: 1rem 0rem;
+	text-transform: uppercase;
+	font-size: 1.25rem;
+	font-weight: bold;
+	line-height: 1.25rem;
+	
+	& span.light{
+		color:#8A8B8A;
+	}
+}
+
 blockquote{
 	padding-left: 3rem;
 	margin-bottom: 1rem;
