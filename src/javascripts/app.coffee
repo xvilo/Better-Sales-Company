@@ -56,7 +56,6 @@ $(".menu-toggle").on "click", (event) ->
 
 $(document).ready ->
   $('.menu-item a').on 'click', (event) ->
-    console.log('clickk')
     event.preventDefault()
     $('html,body').animate { scrollTop: $(@hash).offset().top - 75 }, 500
     $("body").removeClass( "menu-open") 
