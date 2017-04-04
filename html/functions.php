@@ -45,7 +45,7 @@
 	function add_theme_scripts() {
 		$rev_files = array_reverse(json_decode(file_get_contents(get_template_directory()."/dist/rev-manifest.json"), true));
 		foreach($rev_files as $key => $item){
-			if( $_SERVER['HTTP_HOST'] == "bettersales.sem" OR $_SERVER['HTTP_HOST'] == "bettersales.magneet.it" ){
+			if( $_SERVER['HTTP_HOST'] == "bettersales.sem" /* OR $_SERVER['HTTP_HOST'] == "bettersales.magneet.it" */){
 				if(pathinfo($key, PATHINFO_EXTENSION) == "css"){
 					wp_enqueue_style("dev-".pathinfo($key, PATHINFO_FILENAME), get_template_directory_uri() ."/". $key);
 				}elseif(pathinfo($key, PATHINFO_EXTENSION) == "js"){
