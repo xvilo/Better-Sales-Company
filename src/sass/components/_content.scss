@@ -1,0 +1,21 @@
+// My Story
+//-----------
+
+#mystory .vc_column-inner{
+	padding-top: 16rem;
+	
+	@media #{$medium-only} {
+		padding-top: 8rem!important;
+	}
+	
+	@media #{$small-only} {
+		padding-top: 3rem!important;
+	}
+}
+
+.my-story-margin{
+	margin-top: 8rem;
+	@media #{$small-only} {
+      margin-top: 3rem;
+    }
+}

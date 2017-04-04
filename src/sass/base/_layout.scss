@@ -5,9 +5,13 @@ html {
   font-size: percentage($base-font-size / 16px);
 
   // Example of varying site scale at a breakpoint:
-  // @media only screen and (min-width: em(1280px)) {
-  //   font-size: percentage(($base-font-size + 1px) / 16px);
-  // }
+  @media #{$small-only} {
+  	font-size: percentage(($base-font-size - 2px) / 16px);
+  }
+  
+  @media only screen and (min-width: em(1921px)) {
+  	font-size: percentage(($base-font-size + 5px) / 16px);
+  }
 }
 
 body {
