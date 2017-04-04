@@ -1,3 +1,17 @@
+	.icon--ui__logo-dark {
+		@include rem((width: 473px));
+
+		&:before {
+			padding-top: calc((81% / 473%) * 100%);
+		}
+	}
+	.icon--ui__logo-light {
+		@include rem((width: 473px));
+
+		&:before {
+			padding-top: calc((81% / 473%) * 100%);
+		}
+	}
 	.icon--ui__marks {
 		@include rem((width: 28px));
 
