@@ -1,8 +1,15 @@
-	.icon--theme__insights {
+	.icon--theme__deals {
 		@include rem((width: 48px));
 
 		&:before {
 			padding-top: calc((33% / 48%) * 100%);
+		}
+	}
+	.icon--theme__insights {
+		@include rem((width: 48px));
+
+		&:before {
+			padding-top: calc((48% / 48%) * 100%);
 		}
 	}
 	.icon--theme__mindset {
