@@ -3,47 +3,42 @@ header{
 	background-image: none;
 	padding: 2rem 0px;
 	position: fixed;
-	z-index: 9999;
+	z-index: 99;
 	width: 100vw;
-	
-	hr{
-		margin-top: 2.375rem;
-		border: 1px solid rgba(#BCC6D0, 0.4);
-	}
-	
-	p{
-		color: $light-text;
-	}
-	
-	& .menu{
+	padding: 1rem 1.5rem;
+
+	& .container > .row{
 		display: flex;
-		justify-content: center;
+		justify-content:space-between;
 		align-items: center;
+	}
+	
+	& a{
+		color:$light-text;
+		font-size: .9125rem;	
+		border: none;
+		font-weight: bold;
+		text-decoration: none;
+		line-height: 2.9125rem;
+		border: none!important;
+	}
+	
+	& .logo{
+		float: left;
+		flex-grow: 3;
+		@media #{$small-only} {
+	       width: 30%;
+	       padding-right: 2rem;
+	    }
+	}
+	
+	& .menu-icon{
+		float: right;
 		
-		& .menu-item{
-			margin-right: 2rem;
-			
-			& a{
-				color:$light-text;
-				font-size: .9125rem;	
-				border: none;
-				font-weight: bold;
-				line-height: 2.9125rem;
-				
-				&:hover{
-					border-bottom: 1px solid $light-text;
-				}
-			}
-			
-			&:last-child{
-				margin-right: 0rem;
-			}
+		& i{
+			font-size: 2rem;
+			line-height: 2rem;
+			color: $main;
 		}
 	}
-}.site--header{
-	height: 41px;
-	position: fixed;
-	top:0px;
-	left: 0px;
-	width: 100vw;
 }

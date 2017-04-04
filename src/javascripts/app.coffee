@@ -34,9 +34,31 @@ app.setup()
 
 $(window).resize $, ->
     
+$(document).ready ->
+  event.preventDefault()
+  items = document.getElementsByClassName('full-height-image')
+  $.each items, (tag) ->
+  	items[tag].firstChild.style.height = items[tag].offsetHeight+"px"
+  return
 
 $(window).on "resize", (event) ->
   event.preventDefault()
   items = document.getElementsByClassName('full-height-image')
   $.each items, (tag) ->
   	items[tag].firstChild.style.height = items[tag].offsetHeight+"px"
+  	
+$(".menu-toggle").on "click", (event) ->
+  event.preventDefault()
+  if $("body").hasClass( "menu-open" )
+    $("body").removeClass( "menu-open")
+  else
+    $("body").addClass( "menu-open")
+
+$(document).ready ->
+  $('.menu-item a').on 'click', (event) ->
+    console.log('clickk')
+    event.preventDefault()
+    $('html,body').animate { scrollTop: $(@hash).offset().top - 75 }, 500
+    $("body").removeClass( "menu-open") 
+    return
+  return
