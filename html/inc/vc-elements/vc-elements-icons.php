@@ -35,7 +35,7 @@ class icons extends WPBakeryShortCode {
 	                    'type' => 'dropdown',
 	                    'heading' => __( 'Icon', 'text-domain' ),
 	                    'param_name' => 'n',
-	                    'value' => array( "Selecteer icoon", "mindset", "insights", "team", "world", "deals" ),
+	                    'value' => array( "Selecteer icoon", "mindset", "insights", "team", "world", "deals", "marks" ),
 	                    'description' => __( '<b>Keuze uit de speciale icons.</b> Wanneer geavanceerde instellingen worden gebruikt, wordt deze optie niet toegepast.', 'text-domain' ),
 	                    'admin_label' => false,
 	                    'weight' => 0,

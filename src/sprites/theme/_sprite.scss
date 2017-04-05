@@ -12,6 +12,13 @@
 			padding-top: calc((48% / 48%) * 100%);
 		}
 	}
+	.icon--theme__marks {
+		@include rem((width: 16px));
+
+		&:before {
+			padding-top: calc((11% / 16%) * 100%);
+		}
+	}
 	.icon--theme__mindset {
 		@include rem((width: 59px));
 

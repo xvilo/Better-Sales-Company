@@ -23,8 +23,16 @@
 	box-shadow: 0 10px 27px 0 rgba(36,36,38,0.23);
 	border-radius: 10px;
 	padding: 2rem 0rem;
+	margin: 7rem auto!important;
+	max-width: rem(360px);
 	
 	p{
 		font-size: rem(14px);
 	}
+}
+
+.magneet-testimonial{
+	margin: 0rem auto!important;
+	max-width: rem(475px);
+	padding: 2rem 0rem;
 }
