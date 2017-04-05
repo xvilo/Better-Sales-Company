@@ -46,7 +46,7 @@ class icons extends WPBakeryShortCode {
 	                    'type' => 'dropdown',
 	                    'heading' => __( 'Uitlijning', 'text-domain' ),
 	                    'param_name' => 'align',
-	                    'value' => array( "links", "centered",),
+	                    'value' => array( "links", "centered", "right",),
 	                    'description' => __( 'Kies je uitlijning.', 'text-domain' ),
 	                    'admin_label' => false,
 	                    'weight' => 0,

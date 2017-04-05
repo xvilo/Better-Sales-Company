@@ -35,6 +35,11 @@
 	display: block ;
 	margin: 0 auto ;
   }
+  
+  &__right{
+	display: block ;
+	margin-left: auto;
+  }
 }
 
 // Example import (assumes a sprite named 'ui'):
