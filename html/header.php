@@ -18,7 +18,7 @@
     </head>
     <body <?php body_class(''); ?>>
 	    <div class="menu-cont">
-			<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+			<?php wp_nav_menu(array( 'theme_location' => 'header-menu' )); ?>
 		</div>
 	    <div class="wrapper">
 			<header class="site-header">

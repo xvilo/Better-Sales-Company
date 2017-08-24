@@ -1,14 +1,14 @@
 <?php get_header(); ?>
          <!-- Start the Loop. -->
-			 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); 
-			?>
-		<?php if ( function_exists('yoast_breadcrumb') ) {
-			yoast_breadcrumb('<div class="container"><p id="breadcrumbs">U bent hier: ','</p></div>');
-		} ?>			 	<!-- Test if the current post is in category 3. -->
+			 <?php if (have_posts()) : while (have_posts()) : the_post();
+            ?>
+		<?php if (function_exists('yoast_breadcrumb')) {
+                yoast_breadcrumb('<div class="container"><p id="breadcrumbs">U bent hier: ', '</p></div>');
+            } ?>			 	<!-- Test if the current post is in category 3. -->
 			 	<!-- If it is, the div box is given the CSS class "post-cat-three". -->
 			 	<!-- Otherwise, the div box is given the CSS class "post". -->
 		<div class="container">
-			 	<?php if ( in_category( '3' ) ) : ?>
+			 	<?php if (in_category('3')) : ?>
 			 		<div class="post-cat-three">
 			 	<?php else : ?>
 			 		<div class="post">
@@ -34,7 +34,7 @@
 			
 			 	<!-- Display a comma separated list of the Post's Categories. -->
 			
-			 	<p class="postmetadata"><?php _e( 'Posted in' ); ?> <?php the_category( ', ' ); ?></p>
+			 	<p class="postmetadata"><?php _e('Posted in'); ?> <?php the_category(', '); ?></p>
 			 	</div> <!-- closes the first div box -->
 			
 			
@@ -47,9 +47,9 @@
 								<h1 class="page-header--title">Pagina niet gevonden...</h1>
 							</div>
 						</section>
-					<?php if ( function_exists('yoast_breadcrumb') ) {
-						yoast_breadcrumb('<div class="container"><p id="breadcrumbs">U bent hier: ','</p></div>');
-					} ?>
+					<?php if (function_exists('yoast_breadcrumb')) {
+                yoast_breadcrumb('<div class="container"><p id="breadcrumbs">U bent hier: ', '</p></div>');
+            } ?>
 					
 					<div class="container">
 						<h3>De opgevraagde pagina is niet gevonden</h3>

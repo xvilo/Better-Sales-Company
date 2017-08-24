@@ -13,7 +13,7 @@ and your customers?<br>
 <b>Just give me a call</b></p>
 				  </div>
 				  <div class="small-1 large-9 columns">
-					  <?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
+					  <?php wp_nav_menu(array( 'theme_location' => 'footer-menu' )); ?>
 				  </div>
 				</div>
 			</div>

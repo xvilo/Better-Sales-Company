@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="container">
-	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		<?php the_content(); ?>
 	 <?php endwhile; else : ?>
 			
@@ -9,9 +9,9 @@
 								<h1 class="page-header--title">Pagina niet gevonden...</h1>
 							</div>
 						</section>
-					<?php if ( function_exists('yoast_breadcrumb') ) {
-						yoast_breadcrumb('<div class="container"><p id="breadcrumbs">U bent hier: ','</p></div>');
-					} ?>
+					<?php if (function_exists('yoast_breadcrumb')) {
+    yoast_breadcrumb('<div class="container"><p id="breadcrumbs">U bent hier: ', '</p></div>');
+} ?>
 					
 					<div class="container">
 						<h3>De opgevraagde pagina is niet gevonden</h3>
